@@ -1,0 +1,150 @@
+.{
+    margin: 0;
+    padding: 0;
+}
+body {
+margin: 0;
+padding: 0;
+ font-family: Arial, sans-serif;
+}
+
+
+
+.navbar {
+    position: sticky;
+ background-color: #333;
+ color: white;
+ padding: 10px 0;
+ text-align: center;
+ 
+}
+
+.navbar-content {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ max-width: 1200px;
+ margin: 0 auto;
+}
+
+.navbar .logo {
+ font-size: 24px;
+ font-weight: bold;
+}
+
+.nav-links {
+ list-style: none;
+ display: flex;
+}
+
+.nav-links li {
+ margin: 0 20px;
+}
+
+.nav-links a {
+ text-decoration: none;
+ color: white;
+}
+.main h1{
+    margin-left: 455px;
+}
+.main{
+    padding: 10px;
+    width: 640px;
+    height: 200px;
+    text-align: justify;
+    margin-bottom: 45px;
+    
+}
+.main p{
+    width: 490px;
+    margin-left: 282px;
+    letter-spacing: 0.15rem;
+}
+.main img{
+    margin-top: -160px;
+    margin-left: 798px;
+}
+.section1 {
+ padding: 100px 20px;
+ text-align: center;
+}
+
+.section1 h1 {
+ font-size: 36px;
+ margin-bottom: 20px;
+ margin-right: 651px;
+ 
+}
+
+.section1 p {
+ font-size: 18px;
+
+ margin-right: 614px;
+ letter-spacing: 0.15rem;
+ padding: 10px;
+  width: 640px;
+  height: 200px;
+  text-align: justify;
+}
+.section2 {
+ padding: 100px 20px;
+ text-align: center;
+}
+
+.section2 h1 {
+ font-size: 36px;
+ margin-bottom: 20px;
+ margin-left: 651px; 
+}
+
+.section2 p {
+ font-size: 18px;
+ /* margin-right: -614px; */
+ letter-spacing: 0.15rem;
+ margin-left: 527px;
+ padding: 10px;
+ width: 640px;
+ height: 200px;
+ text-align: justify;
+}
+
+.user-actions a {
+ margin-left: 20px;
+ color: #ff4500;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+/* Text Animation */
+.section h1, .section p {
+ opacity: 0;
+ transform: translateY(50px);
+ animation: fadeInUp 1s forwards;
+}
+.section1 img{
+    width: 318px;
+    margin-top: -224px;
+    margin-left: 754px;
+}
+.section2 img{
+    width: 477px;
+    margin-top: -255px;
+    margin-right: 759px;
+}
+@keyframes fadeInUp {
+ from {
+     opacity: 0;
+     transform: translateY(50px);
+ }
+ to {
+     opacity: 1;
+     transform: translateY(0);
+ }
+}
+footer{
+    background-color: #9a9a9a;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
