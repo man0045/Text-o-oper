@@ -1,0 +1,111 @@
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ margin: 0;
+ background: linear-gradient(to right, #ff6f61, #ffda59);
+ font-family: Arial, sans-serif;
+}
+/* ... (previous CSS styles) ... */
+
+.signup-form .name-inputs {
+ display: flex;
+ justify-content: space-between;
+}
+
+.signup-form .name-inputs input {
+ width: calc(48% - 11px); /* Adjust the width to fit two inputs in one row with some space in between */
+}
+
+.signup-form .password-inputs,
+.signup-form .contact-inputs {
+ display: flex;
+ justify-content: space-between;
+}
+
+.signup-form .password-inputs input,
+.signup-form .contact-inputs input {
+ width: calc(48% - 11px); /* Adjust the width to fit two inputs in one row with some space in between */
+}
+
+/* ... (previous CSS styles) ... */
+
+.signup-container {
+ background-color: rgba(255, 255, 255, 0.9);
+ padding: 40px;
+ border-radius: 10px;
+ box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+ text-align: center;
+ animation: fadeIn 0.5s ease;
+ max-width: 400px;
+ width: 100%;
+}
+
+.signup-container h2 {
+ margin-bottom: 30px;
+ font-size: 36px;
+ color: #333;
+}
+
+.signup-form input {
+ width: calc(100% - 22px);
+ margin-bottom: 20px;
+ padding: 12px;
+ border: none;
+ border-radius: 25px;
+ font-size: 16px;
+ background-color: #f9f9f9;
+ color: #333;
+ transition: all 0.3s ease;
+}
+
+.signup-form input:focus {
+ outline: none;
+ background-color: #ffffff;
+ box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form button {
+ width: calc(100% - 22px);
+ padding: 12px;
+ background-color: #ff6f61;
+ color: white;
+ border: none;
+ border-radius: 25px;
+ font-size: 18px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+ background-color: #ff544b;
+}
+
+.login-link {
+ margin-top: 20px;
+ font-size: 14px;
+ color: #333;
+ animation: fadeIn 1s ease;
+}
+
+.login-link a {
+ color: #ff6f61;
+ text-decoration: none;
+ font-weight: bold;
+ transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+ color: #ff544b;
+}
+
+@keyframes fadeIn {
+ from {
+     opacity: 0;
+ }
+ to {
+     opacity: 1;
+ }
+}
+
