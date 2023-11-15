@@ -7,7 +7,7 @@
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <title>Text-O-Oper</title>
 </head>
 
@@ -22,8 +22,9 @@
                 <li><a href="#faqs">FAQs</a></li>
             </ul>
             <div class="user-actions">
-                <a href="/login/log.html">Login</a>
-                <a href="/Signup/signup.html">Sign Up</a>
+                <a href="{{ url_for('login') }}">Login</a>
+
+                <a href="{{ url_for('signup') }}">Sign Up</a>
             </div>
         </div>
        </nav>
@@ -31,7 +32,7 @@
         <h2>Text-O-Oper</h2>
         <p>Text-O-Oper refers to all that things in which user can perform almost every operation of text  as per his prior basis so that user can easily perform all text operation at the single Plateform </p>
         <div class="gif-wrapper">
-            <img src="target.gif" alt="target">
+            <img src="{{ url_for('static', filename='target.gif') }}" alt="target">
         </div>
         
        </div>
@@ -39,26 +40,26 @@
     <div class="section1" id="home">
         <h1>Text Recognition</h1>
         <p>Text recognition, also known as Optical Character Recognition (OCR), is the technology that recognizes text within images or scanned documents, converting them into editable and searchable data.Text recognition, also known as optical character recognition (OCR), is a technology that enables the conversion of different types of documents, such as scanned paper documents, PDFs, or images captured by a digital camera, into editable and searchable data. This process involves recognizing and extracting text characters from the input image or document, making it accessible for various applications and workflows.</p>
-        <img src="OCR.gif" alt="images">
+        <img src="{{ url_for('static', filename='OCR.gif') }}" alt="images">
     </div>
 
     <div class="section2" id="services">
         <h1>Text Summarization</h1>
         <p>Text summarization is the process of shortening long pieces of <br>text while preserving key ideas and concepts. It is widely used in data analysis,<br> research, and content optimization to provide concise summaries of lengthy texts.Extractive summarization involves selecting and extracting specific sentences or passages from the original text to form a summary. These sentences are chosen based on their relevance and importance, often using algorithms that analyze the frequency of words or their importance within the text. </p>
-         <img src="extractive.gif" alt="extracting">
+        <img src="{{ url_for('static', filename='extractive.gif') }}" alt="extracting">
        </div>
 
     <div class="section1" id="about">
         <h1>Text to Language Conversion</h1>
         <p>Text to language conversion, also known as text-to-speech (TTS), is a technology<br> that converts written text into spoken words. It finds applications in accessibility,<br> language learning, and assistive technologies.text-to-language conversion is a transformative technology that bridges the gap between written information and auditory perception, enhancing accessibility and user experience in various applications. Ongoing research and development continue to push the boundaries of what is possible in the realm of synthesized speech.</p>
-        <img src="chatgpt-translate.gif" alt="chatgpt-translate">
+        <img src="{{ url_for('static', filename='chatgpt-translate.gif') }}" alt="chatgpt-translate">
     </div>
     <div class="heading">
         <h1>Our Tech Partners</h1>
     </div>
     <div class="wrapper">
         <div class="card">
-            <img src="thunder_logo.webp">
+            <img src="{{ url_for('static', filename='thunder_logo.webp') }}">
             <div class="info">
                 <h1>Thunder Client</h1>
                 <p>
@@ -68,7 +69,7 @@
         </div>
 
         <div class="card">
-            <img src="ethreal.jpeg">
+            <img src="{{ url_for('static', filename='fusion.jpeg') }}">
             <div class="info">
                 <h1>Ethreal</h1>
                 <p>Ethereal Email is a free email-catching service. It allows users to create temporary email addresses that can be used to receive emails from other users.</p>
@@ -77,7 +78,7 @@
         </div>
         
         <div class="card">
-            <img src="fusion.jpeg">
+            <img src="{{ url_for('static', filename='ethreal.jpeg') }}">
             <div class="info">
                 <h1>FusionAuth</h1>
                 <p>FusionAuth is a cloud-based identity and access management (IAM) platform. It provides features such as user authentication, authorization, and registration.</p>
@@ -92,7 +93,8 @@
 
     
 </body>
-<script src="scripts.js"></script>
+<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+
 <footer>
  made by ❤️ with Team Text-O-Oper &copy;  Copyright all right reserved 2023
 </footer>

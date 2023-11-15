@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
     <title>Login Page</title>
 </head>
 
@@ -23,7 +23,7 @@
             <button type="submit">Login</button>
         </form>
         <div class="login-link">
-         Don't have an account? <a href="/Signup/signup.html">Signup</a>
+         Don't have an account? <a href="{{ url_for('signup') }}">Sign Up</a>
      </div>
     </div>
 </body>
