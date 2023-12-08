@@ -17,9 +17,9 @@
             <div class="logo">Text-O-Oper</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="{{ url_for('home') }}">Services</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="{{ url_for('test') }}">FAQs</a></li>
             </ul>
             <div class="user-actions">
                 <a href="{{ url_for('login') }}">Login</a>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summarise any text</title>
+</head>
+
+<body>
+    <h1>Welcome</h1>
+    <form action="{{url_for('summariser')}}" method="post">
+        <label for="initial-corpus">Initial Corpus</label>
+        <Textarea type="text" id="initial-corpus" name="initial-corpus" placeholder="enter you text"></Textarea>
+        <button type="submit">Submit</button>
+</body>
+
+</html>
